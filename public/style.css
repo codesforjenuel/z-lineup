@@ -1,0 +1,149 @@
+body {
+    background: rgb(203, 203, 203);
+   
+}
+.container-fluid {
+    display: flex;
+align-items: center;
+}
+.navbar {
+    background: rgb(201, 0, 44);
+border-bottom:1px solid #000000;
+}
+
+.inputName {
+    height: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    height: 20px;
+    width: 30px;
+    color: #000000;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    background: rgb(179, 15, 15);
+    border: none;
+    box-shadow: 0px 0px 3px 1px;
+}
+
+.btn:hover {
+    color: #000000;
+    background:rgb(111, 3, 3);
+    border: none;
+    
+}
+
+.carName {
+    text-align: center;
+}
+
+.card{
+   display: flex;
+    justify-content: center;
+    height: 500px;
+    width: 18rem;
+    margin-top: 3%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+  background: rgb(190, 190, 190);
+    filter: drop-shadow(5px 15px 4px #000000);
+}
+
+.card2 {
+   margin-bottom: 5%;
+    background: rgb(201, 0, 44);
+    height: 40%;
+    width: 90%;
+}
+
+.photoEl {
+border-radius: 3px;
+width: 100%;
+height: 180px;
+}
+
+li {
+    list-style: none;
+    display: flex;
+    justify-content:start;
+    margin-left: 10px;
+   
+}
+
+ul {
+    border-radius: 2px;
+   
+}
+
+iframe {
+    width:100%; 
+    height:450px; 
+}
+
+.container {
+    background: url(https://www.brandsynario.com/wp-content/uploads/2020/07/Nissan.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.container2 {
+    margin-left: 2%;
+    margin-top: 3% ;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+    width: 70%;
+}
+
+@media only screen and (max-width: 991px) {
+.photoEl {
+    height: 230px;
+}
+iframe {
+    height: 250px;
+}
+
+.card {
+    width: 80%;
+}
+
+.card2 {
+    height: 80%;
+}
+
+
+}
+
+@media only screen and (max-width: 766px) {
+    .card {
+        width: 80%;
+    }
+    iframe {
+        height: 280px;
+        width: 410px;
+    }
+.container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.container2 {
+   margin-left: 0%;
+   
+}
+.card2 {
+    width: 100%;
+}
+    }
+
+    @media only screen and (max-width: 425px) {
+   iframe {
+       width: 300px;
+   }
+        }
