@@ -4,7 +4,7 @@ const routes = require('./controllers')
 const express = require("express");
 const sequelize = require('./config/connection')
 const expbs = require("express-handlebars");
-const PORT = process.env.PORT || 8080
+const PORT = process.env.PORT || 8081
 const app = express();
 
 app.engine("handlebars", expbs.engine({ defaultLayout: "main" }));
@@ -18,28 +18,3 @@ app.use(routes)
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log(`server is now listening at http://localhost:${PORT}`));
 });
-
-
-
-
-
-app.get('/api/cars', (req, res) => {
-    res.json(cars)
-})
-
-app.get('/api/cars/:carModel', (req, res) => {
-const modelReq = req.params.carModel;
-console.log(modelReq)
-
-for (let i = 0; i < cars.length; i++) {
-    const currentChar = cars[i];
-    if (modelReq === currentChar.model) {
-      return res.json(currentChar);
-    }
-  
-  }
-return res.send('No character found');
-
-})
-
-

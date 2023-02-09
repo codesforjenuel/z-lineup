@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS nissan_db;
+CREATE DATABASE nissan_db;
