@@ -1,29 +1,27 @@
  <div class="container">
 
     <div class="card red-light" >
-      <img class="card-img-top photoEl" alt="car photo">
+      <img class="card-img-top photoEl" src={{photoUrl}} alt="car photo">
       <div class="card-body">
-        <h5 class="card-title carName">Card title</h5>
+        <h5 class="card-title carName">{{ model }}</h5>
         <ul>
-          <li class="brandEl">Brand</li>
-          <li class="motorEl">Motor</li>
-          <li class="hpEl">Horsepower</li>
-          <li class="tqEl">torque</li>
-          <li class="cylEl">cylinders</li>
-          <li class="mpgEl">MPG</li>
-          <li class="originEl">Origin</li>
-          <li class="msrpEl">MSRP</li>
+          <li class="motorEl">Motor:{{ motor }}</li>
+          <li class="hpEl">Horsepower:{{ horsepower }}</li>
+          <li class="tqEl">torque:{{torque}}lb</li>
+          <li class="cylEl">Cylinders:{{cylinders}}</li>
+          <li class="mpgEl">Mpg:{{mpgs}}</li>
+          <li class="msrpEl">Mrsp:${{msrp}}</li>
         </ul>
       </div>
     </div>
 
     <div class="container2">
-    <iframe class="videoUrl"></iframe>
+    <iframe class="videoUrl" src={{videoEmbed}}></iframe>
 
     <div class="card card2" >
       <div class="card-body">
         <h5 class="card-title carTitle"></h5>
-        <p class="card-text carInfo"></p>
+        <p class="card-text carInfo">{{info}}</p>
 
       </div>
     </div>
