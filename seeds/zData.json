@@ -1,5 +1,4 @@
 [    {
-    "brand": "Nissan",
     "model": "300zx",
     "motor": "VG30",
     "horsepower":"300",
@@ -13,7 +12,6 @@
     "photoUrl": "https://media.sketchfab.com/models/c0cec80ad27548409625f1c96a0cc8ce/thumbnails/375fc4f8dc0c43feba4187dd08948775/104cf5a555a44f3aac0f20053227e0fc.jpeg"
 },
 {
-    "brand": "Nissan",
     "model": "350z",
    "motor": "VQ35",
     "horsepower":"306",
@@ -27,7 +25,6 @@
     "photoUrl": "https://file.kelleybluebookimages.com/kbb/base/house/2008/2008-Nissan-350Z-FrontSide_NI350081_505x375.jpg"
 },
 {
-    "brand": "Nissan",
     "model": "370z",
     "motor": "VQ37",
     "horsepower":"332",
@@ -41,7 +38,6 @@
     "photoUrl": "https://media.ed.edmunds-media.com/nissan/370z/2019/oem/2019_nissan_370z_coupe_nismo_fq_oem_1_1600.jpg"
 },
 {
-    "brand": "Nissan",
     "model": "r35",
     "motor": "VR38",
     "horsepower":"565",
@@ -55,7 +51,6 @@
     "photoUrl": "https://wieck-nissanao-production.s3.amazonaws.com/photos/f5c331f0130a4a976f1c9f4abf3dc772fcc373f1/preview-928x522.jpg"
 },
 {
-    "brand": "Nissan",
     "model": "z",
     "motor": "VR30",
     "horsepower":400,
