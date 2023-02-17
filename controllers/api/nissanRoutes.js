@@ -7,5 +7,14 @@ router.get('/', (req, res) => {
     })
 
 });
+router.get('/:carModel', (req, res) => {
+    Nissan.findAll(
+        {
+            where: {model: req.params.carModel}
+        }
+    ).then((nissanModel) => {
+        res.json(nissanModel)
+    })
+});
 
 module.exports = router
