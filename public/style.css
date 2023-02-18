@@ -42,6 +42,7 @@ border-bottom:1px solid #000000;
 .card{
    display: flex;
     justify-content: center;
+    align-items: center;
     height: 500px;
     width: 18rem;
     margin-top: 3%;
@@ -59,8 +60,8 @@ border-bottom:1px solid #000000;
 
 .photoEl {
 border-radius: 3px;
-width: 100%;
-height: 180px;
+width: 260px;
+height: 170px;;
 }
 
 li {
@@ -86,7 +87,7 @@ iframe {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    
+    width:500rem;;
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -117,12 +118,18 @@ iframe {
     height: 80%;
 }
 
+.photoEl {
+    width: 300px;
+    height: 210px;;
+}
 
 }
 
 @media only screen and (max-width: 766px) {
     .card {
-        width: 80%;
+        width: 100%;
+    height:400px;
+    
     }
     iframe {
         height: 280px;
@@ -137,13 +144,21 @@ iframe {
    margin-left: 0%;
    
 }
+
 .card2 {
     width: 100%;
 }
+.photoEl{
+    width: 300px;
+height: 210px;;
+}
     }
 
-    @media only screen and (max-width: 425px) {
-   iframe {
-       width: 300px;
+    @media only screen and (max-width: 374px) {
+ 
+
+   .photoEl {
+    width: 200px;
+height: 140px;;
    }
         }
