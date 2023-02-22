@@ -35,6 +35,13 @@ border-bottom:1px solid #000000;
     
 }
 
+.card-body {
+    background: rgb(201, 0, 44) ;
+    margin: 4%;
+    filter: drop-shadow(0px 5px 5px black);
+    border-radius: 10px;
+}
+
 .carName {
     text-align: center;
 }
@@ -53,7 +60,7 @@ border-bottom:1px solid #000000;
 
 .card2 {
    margin-bottom: 5%;
-    background: rgb(201, 0, 44);
+    background: rgb(190, 190, 190);
     height: 40%;
     width: 90%;
 }
