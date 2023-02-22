@@ -1,5 +1,8 @@
 body {
-    background: rgb(203, 203, 203);
+    background-image: url("https://free4kwallpapers.com/uploads/originals/2021/03/11/forest-mountains-with-a-blue-filter-wallpaper.jpg");
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
    
 }
 .container-fluid {
@@ -99,6 +102,7 @@ iframe {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 0;
 }
 .container2 {
     margin-left: 2%;
