@@ -1,4 +1,40 @@
 [    {
+    "model": "240z",
+    "motor": "L24",
+    "horsepower":"151",
+    "torque":"146",
+    "cylinders": 6,
+    "mpgs":"21",
+    "msrp": 3526,
+    "info": "The difference between the Datsun 240Z and your everyday three-and-a-half thousand dollar sports car is that about twice as much thinking went into the Datsun. It shows. For the money the 240Z is an almost brilliant car.ALL ABOUT THE Z",
+    "videoEmbed": "https://www.youtube.com/embed/y0BS2eT4vjo",
+    "photoUrl": "https://silodrome.com/wp-content/uploads/2020/09/Datsun-240Z.jpg"
+},
+    {
+    "model": "280zx",
+    "motor": "L28",
+    "horsepower":"138",
+    "torque":"148",
+    "cylinders": 6,
+    "mpgs":"21",
+    "msrp": 2640,
+    "info": "This Nissan 280ZX Turbo was produced from 1980 to 1983. It is part of the S130 generation 280ZX. It's a rear-wheel drive front-engined 3-door sports coupé with 2+2 seats. With 197 hp, the turbocharged 2.8 Liter 12v Inline 6 gasoline engine accelerates this 280ZX Turbo to 62 mph in 7.7 seconds and on to a maximum speed of 143 mph.",
+    "videoEmbed": "https://www.youtube.com/embed/c3TnZQrtAx8",
+    "photoUrl": "https://bringatrailer.com/wp-content/uploads/2019/02/1983_datsun_280zx_turbo_1552675193856724221e9d363e2f1983_datsun_280zx_turbo_15526751786724221e9d363e2feZX-001-1-e1553278904979.jpg?fit=940%2C627"
+},
+    {
+    "model": "z31",
+    "motor": "VG30ET",
+    "horsepower":"229",
+    "torque":"240",
+    "cylinders": 6,
+    "mpgs":"19",
+    "msrp": 10760,
+    "info": "The Nissan 300ZX is a sports car that was produced across two different generations. As with all other versions of the Z, the 300ZX was sold within the Japanese domestic market under the name Fairlady Z.",
+    "videoEmbed": "https://www.youtube.com/embed/kI1i88NyXTU",
+    "photoUrl": "https://garagedreams.net/wp-content/uploads/2019/04/Nissan-300ZX-Z31-50th-Anniversary.jpg"
+},
+    {
     "model": "300zx",
     "motor": "VG30",
     "horsepower":"300",
@@ -20,7 +56,7 @@
     "msrp": 36500,
     "info": "The Nissan 350Z, a two-door, two-seater sports car, kicked off production for the  fifth generation of Nissan Z-Cars 2002 and ended the 6-year production hiatus in the US. 350Z, with its’ sleek redesign of 240Z DNA, helped rejuvenate the Nissan market presence going into the latter half of the decade.",
     "videoEmbed": "https://www.youtube.com/embed/sSwGs6TlcCY",
-    "photoUrl": "https://file.kelleybluebookimages.com/kbb/base/house/2008/2008-Nissan-350Z-FrontSide_NI350081_505x375.jpg"
+    "photoUrl": "https://www.topgear.com/sites/default/files/2022/12/TopGear%20-%20Exhaust%20-%20Nissan%20350Z%20-%20002.jpg"
 },
 {
     "model": "370z",

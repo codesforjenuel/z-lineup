@@ -1,88 +1,24 @@
-// let photoEl = document.querySelector(".photoEl")
-// let brandEl = document.querySelector(".brandEl")
-// let modelEl = document.querySelector(".carName")
-// let motorEl = document.querySelector(".motorEl")
-// let hpEl = document.querySelector(".hpEl")
-// let tqEl = document.querySelector(".tqEl")
-// let cylEl = document.querySelector(".cylEl")
-// let mpgEl = document.querySelector(".mpgEl")
-// let originEl = document.querySelector(".originEl")
-// let msrpEl = document.querySelector(".msrpEl")
-// let searchBtn = document.querySelector("button")
-// let carTitle = document.querySelector(".carTitle")
-// let carInfo = document.querySelector(".carInfo")
-// let videoUrl = document.querySelector(".videoUrl")
-// fetch(`/api/cars/z`, {
-//   method: 'GET',
-//   headers: {
-//     'Content-Type': 'application/json'
-//   }
-// })
-//   .then((response) => response.json())
-//   .then((carData) => {
-//     console.log(carData);
-//     const { brand, model, motor,torque, horsepower, cylinders, mpgs, origin, info, videoEmbed, msrp, photoUrl } = carData;
-//     if (carData) {
-//       carTitle.textContent = `${brand} ${model.toUpperCase()}`
-//       brandEl.textContent = `Company: ${brand}`;
-//       modelEl.textContent = model.toUpperCase();
-//       motorEl.textContent = `Motor: ${motor}`;
-//       hpEl.textContent = `${horsepower}hp`;
-//       tqEl.textContent = `${torque}lb-ft`;
-//       cylEl.textContent = `V${cylinders}`;
-//       mpgEl.textContent = `MPG ${mpgs} `;
-//       originEl.textContent = `Made In ${origin}`;
-//       carInfo.textContent = info;
-//       videoUrl.src = videoEmbed
-//       msrpEl.textContent = `MSRP: $ ${msrp} USD`;
-//       photoEl.src = photoUrl;
-//     } else {
-//       modelEl.textContent =
-//         'no car data';
-//     }
-//   })
-//   .catch((error) => {
-//     console.error(error);
-//   });
 
+const btn = document.querySelector(".btn").addEventListener("click", (event) => {
+    event.preventDefault()
+const inputName = document.querySelector(".inputName")
+    
+    fetch(`/api/nissan/${inputName.value}`)
+        .then(response => response.json())
+        .then((modelData => {
+            console.log(modelData)
+            
 
-// searchBtn.addEventListener("click", (event) => {
-//   event.preventDefault()
-//   let inputedName = document.querySelector('.inputName').value;
+            document.querySelector(".photoEl").src =modelData[0].photoUrl;
+            document.querySelector(".carName").textContent =modelData[0].model;
+            document.querySelector(".hpEl").textContent =`Horsepower:${modelData[0].horsepower}`;
+            document.querySelector(".tqEl").textContent =`Torque:${modelData[0].torque}`
+            document.querySelector(".cylEl").textContent =`Cylinder:${modelData[0].cylinders}`
+            document.querySelector(".mpgEl").textContent =`Mpg:${modelData[0].mpgs}`
+            document.querySelector(".msrpEl").textContent =`Mrsp:$${modelData[0].msrp}`
+            document.querySelector(".videoUrl").src = modelData[0].videoEmbed
+            document.querySelector(".carInfo").textContent = modelData[0].info
 
-//   fetch(`/api/cars/${inputedName}`, {
-//     method: 'GET',
-//     headers: {
-//       'Content-Type': 'application/json'
-//     }
-//   })
-//     .then((response) => response.json())
-//     .then((carData) => {
-//       console.log(carData);
-//       const { brand, model, motor,torque, horsepower, cylinders, mpgs, origin, info, videoEmbed, msrp, photoUrl } = carData;
-//     if (carData) {
-//       carTitle.textContent = `${brand} ${model.toUpperCase()}`
-//       brandEl.textContent = `Company: ${brand}`;
-//       modelEl.textContent = model.toUpperCase();
-//       motorEl.textContent = `Motor: ${motor}`;
-//       hpEl.textContent = `${horsepower}hp`;
-//       tqEl.textContent = `${torque}lb-ft`;
-//       cylEl.textContent = `V${cylinders}`;
-//       mpgEl.textContent = `MPG ${mpgs} `;
-//       originEl.textContent = `Made In ${origin}`;
-//       carInfo.textContent = info;
-//       videoUrl.src = videoEmbed
-//       msrpEl.textContent = `MSRP: $ ${msrp} USD`;
-//       photoEl.src = photoUrl;
-//     } else if (inputedName !== carData.model) {
-//         alert("invalid entry");
-//       }
-
-//     })
-//     .catch((error) => {
-//       console.error(error);
-//     });
-
-   
-
-// })
+            inputName.value = ""
+        }))
+})
