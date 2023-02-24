@@ -13,57 +13,96 @@ align-items: center;
     background: rgb(201, 0, 44);
 border-bottom:1px solid #000000;
 }
+.dropName {
+    margin: 0;
+    width: 200px;
+    height: 80px;
+}
+.dropName:hover {
+box-shadow: inset 0px 0px 20px rgb(255, 255, 255);
+transition: 200ms;
+}
+.dropContainer {
+    border-radius: 5px;
+    padding-left: 0;
+    box-shadow: 0px 0px 5px black;
+    position: absolute;
+    top: 100%;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+}
 .zButton {
+    position: relative;
     background: none;
     border: none;
 }
 
 .zButton:hover {
-    filter: drop-shadow(0px 2px 3px white);
+    filter: drop-shadow(0px 5px 2px white);
     transition: 300ms;
 }
 
-.dropButton {
-    position: relative;
-}
-
-.dropName {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 0;
-}
-
-.dropName:hover {
-    background: white;
+.zButton:focus + .dropContainer {
+   opacity: 1;
     transition: 300ms;
-}
-
-.dropBox {
-    position: absolute;
-    box-shadow: 0px 5px 5px black;
-    margin-top: 20px;
-    transition:opacity 180ms ease-in-out, transform 180ms ease-in-out;
-    transform: translateY(-10px);
-    opacity: 0;
-    /* pointer-events: none; */
-}
-.dropContainer {
- position: relative;
- text-align:start;
- width: 100px;
-    background:rgb(201, 0, 44); 
-    margin: 0;
-    padding: 0;
-    border: 1px solid black;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.dropButton > .zButton:focus + .dropBox {
-    opacity: 1;
     transform: translateY(0);
-    /* pointer-events: auto; */
+  
+
 }
+.z240 {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-image: url('https://hips.hearstapps.com/hmg-prod/amv-prod-cad-assets/images/00q2/267323/datsun-240z-photo-5159-s-original.jpg?crop=1.00xw:0.822xh;0,0.129xh&resize=1200:*');
+background-size: cover;
+color: aliceblue;
+padding: 2px;
+}
+.zx280 {
+    background-image: url('https://journal.classiccars.com/media/2022/02/29901205-1982-datsun-280zx-std.jpg');
+background-size: cover;
+background-position: center;
+color: aliceblue;
+padding: 2px;
+}
+.z31 {
+    background-image: url('https://i.pinimg.com/originals/3a/6e/bc/3a6ebcdb756641a8a79ed5c4ab580d91.jpg');
+background-size: cover;
+background-position: center;
+color: rgb(255, 255, 255);
+padding: 2px;
+}
+.zx300 {
+    background-image: url('https://bringatrailer.com/wp-content/uploads/2021/11/1994_nissan_300zx-twin-turbo_1994_nissan_300zx-twin-turbo_23f1f1d0-fa46-45b6-903d-07b5174547c7-m7x9r3-1.jpg?fit=940%2C626');
+background-size: cover;
+background-position: center;
+color: rgb(255, 255, 255);
+padding: 2px;
+}
+.z350 {
+    background-image: url('https://media.carsandbids.com/cdn-cgi/image/width=2080,quality=70/da6e8a1d4896127a9d2adf83461993b45339474c/photos/3owMzwv2-ngk1FP1T5sb.CNQCeh_J6.jpg?t=162864163397');
+background-size: cover;
+background-position: center;
+color: rgb(255, 255, 255);
+padding: 2px;
+}
+.z370 {
+    background-image: url('https://ca-times.brightspotcdn.com/dims4/default/e6d19fd/2147483647/strip/true/crop/2048x1152+0+0/resize/1200x675!/quality/80/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F24%2F75%2Fcca3ef647ac1ad0a3d8198c66514%2Fla-1521677853-g1joww0a6o-snap-image');
+background-size: cover;
+background-position: center;
+color: rgb(255, 255, 255);
+padding: 2px;
+}
+.z {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-image: url('https://www.autotrader.com/wp-content/uploads/2021/08/2023-nissan-z-front-left-side.jpg?w=1024');
+background-size: cover;
+background-position: center;
+color: rgb(255, 255, 255);
+padding: 2px;
+}
+
 .inputName {
     height: 20px;
     font-family:Verdana, Geneva, Tahoma, sans-serif ;
@@ -124,7 +163,7 @@ border-bottom:1px solid #000000;
 }
 
 .photoEl {
-    margin-top: 3%;
+    margin-top: 9%;
 border-radius: 3px;
 width: 290px;
 height: 170px;;
