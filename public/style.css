@@ -3,7 +3,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto;
-
+font-size: 30px;
 }
 
 .container-fluid {
@@ -184,10 +184,10 @@ body {
 }
 
 .photoEl {
-    margin-top: 9%;
+    margin-top: 50px;
     border-radius: 3px;
-    width: 290px;
-    height: 170px;
+    width: 390px;
+    height: 270px;
     ;
 }
 
@@ -208,6 +208,7 @@ ul {
 iframe {
     width: 70%;
     height: 420px;
+    margin-left: 15%;
 }
 
 .container {
@@ -216,7 +217,7 @@ iframe {
     background-repeat: no-repeat;
     background-position: center;
     width: 90%;
-    height: 100%;
+    height:100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -225,7 +226,7 @@ iframe {
 
 .container2 {
     margin-left: 2%;
-    margin-top: 3%;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -239,6 +240,7 @@ iframe {
 
     iframe {
         height: 250px;
+        margin-left: 0;
     }
 
     .card {
@@ -254,10 +256,12 @@ iframe {
         height: 210px;
         ;
     }
-
 }
 
 @media only screen and (max-width: 766px) {
+    body {
+        font-size: 20px;
+    }
     .card {
         width: 100%;
         height: 400px;
@@ -273,6 +277,7 @@ iframe {
         flex-direction: column;
         align-items: center;
         width: 100%;
+        height: 100%;
     }
 
     .container2 {
@@ -292,12 +297,17 @@ iframe {
 }
 
 @media only screen and (max-width: 374px) {
+body {
+    font-size: 12px;
+}
+
     .container {
         width: 100%;
+        height: 100%;
     }
 
     iframe {
-        height: 280px;
+        height: 250px;
         width: 300px;
     }
 
@@ -306,6 +316,7 @@ iframe {
         height: 140px;
         ;
     }
+  
 }
 
 @keyframes imageIn {
